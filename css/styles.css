@@ -249,6 +249,10 @@ canvas {
   display: none;
 }
 
+.restart-mobile-btn {
+  display: none;
+}
+
 /* MOBILE DEITADO */
 @media (max-width: 900px) and (orientation: landscape) {
   body {
@@ -450,6 +454,42 @@ canvas {
     transform: translateY(2px);
     background: rgba(255, 213, 74, 0.48);
     box-shadow: 0 1px 0 rgba(183, 141, 0, 0.35);
+  }
+
+  .restart-mobile-btn {
+    position: fixed;
+    left: 50%;
+    bottom: 82px;
+    transform: translateX(-50%);
+    z-index: 60;
+
+    padding: 10px 22px;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 14px;
+
+    background: rgba(255, 213, 74, 0.88);
+    color: #15152b;
+
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+    box-shadow: 0 4px 0 rgba(183, 141, 0, 0.75);
+    cursor: pointer;
+    touch-action: none;
+  }
+
+  .restart-mobile-btn.hidden {
+    display: none !important;
+  }
+
+  .restart-mobile-btn:not(.hidden) {
+    display: block;
+  }
+
+  .restart-mobile-btn:active {
+    transform: translateX(-50%) translateY(3px);
+    box-shadow: 0 1px 0 rgba(183, 141, 0, 0.75);
   }
 }
 

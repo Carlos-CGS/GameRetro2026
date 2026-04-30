@@ -12,6 +12,7 @@ const chooseValentinaButton = document.getElementById("chooseValentina");
 const chooseTaynaButton = document.getElementById("chooseTayna");
 const backToCharacterButton = document.getElementById("backToCharacter");
 const pauseButton = document.getElementById("pauseButton");
+const restartGameButton = document.getElementById("restartGameBtn");
 
 const keys = {
   left: false,
@@ -343,6 +344,7 @@ function resetGame() {
   gameState = "playing";
   pauseButton.textContent = "Pausar";
   startBackgroundMusic();
+  updateRestartButtonVisibility();
   updateHud(getLevel().message);
 }
 
@@ -381,6 +383,18 @@ function updateHud(message) {
     messageText.textContent = `${getLevel().name} | ${message}`;
   } else {
     messageText.textContent = message;
+  }
+}
+
+function updateRestartButtonVisibility() {
+  if (!restartGameButton) {
+    return;
+  }
+
+  if (gameState === "gameOver") {
+    restartGameButton.classList.remove("hidden");
+  } else {
+    restartGameButton.classList.add("hidden");
   }
 }
 
@@ -456,7 +470,8 @@ function loseLife() {
     playSound("looseGame");
 
     gameState = "gameOver";
-    updateHud("Fim de jogo!");
+    updateRestartButtonVisibility();
+    updateHud("Fim de jogo! Clique em REINICIAR para jogar novamente.");
     return;
   }
 
@@ -477,6 +492,7 @@ function completeLevel() {
   if (currentLevel < levels.length - 1) {
     playSound("winnerGame");
     gameState = "levelComplete";
+    updateRestartButtonVisibility();
     updateHud("Fase concluída! Pressione ENTER ou PULAR para continuar.");
   } else {
     playSound("winnerGame");
@@ -484,6 +500,7 @@ function completeLevel() {
     const lifeBonus = lives * 100;
     score += lifeBonus;
     gameState = "gameWon";
+    updateRestartButtonVisibility();
     updateHud(`Vocês chegaram ao castelo mágico! Bônus de vidas: ${lifeBonus} pontos.`);
   }
 }
@@ -495,6 +512,7 @@ function goToNextLevel() {
     resetPlayer();
     gameState = "playing";
     startBackgroundMusic();
+    updateRestartButtonVisibility();
     updateHud(getLevel().message);
   }
 }
@@ -508,6 +526,7 @@ function togglePause() {
     gameState = "paused";
     pauseButton.textContent = "Continuar";
     sounds.music.pause();
+    updateRestartButtonVisibility();
     updateHud("Jogo pausado.");
     return;
   }
@@ -516,6 +535,7 @@ function togglePause() {
     gameState = "playing";
     pauseButton.textContent = "Pausar";
     sounds.music.play();
+    updateRestartButtonVisibility();
     updateHud(getLevel().message);
   }
 }
@@ -798,11 +818,6 @@ function drawBoss() {
     const bossDrawWidth = boss.width + 40;
     const bossDrawHeight = boss.height + 45;
     const bossDrawX = boss.x - 20;
-
-    /*
-      Aumente esse número se o T-Rex ainda parecer flutuando.
-      Diminua se ele ficar afundado no chão.
-    */
     const bossDrawY = boss.y + boss.height - bossDrawHeight + 38;
 
     ctx.save();
@@ -1156,6 +1171,7 @@ function gameLoop() {
   }
 
   drawGame();
+  updateRestartButtonVisibility();
 
   if (gameState === "playing") {
     updatePlayer();
@@ -1190,7 +1206,7 @@ function gameLoop() {
     drawTextOverlay(
       "Ops! Vamos tentar de novo?",
       "O Reino dos Dinossauros ainda precisa de vocês!",
-      "Pressione R para reiniciar"
+      "Clique em REINICIAR para jogar novamente"
     );
   }
 
@@ -1295,6 +1311,12 @@ backToCharacterButton.addEventListener("click", () => {
 pauseButton.addEventListener("click", () => {
   togglePause();
 });
+
+if (restartGameButton) {
+  restartGameButton.addEventListener("click", () => {
+    resetGame();
+  });
+}
 
 updateHud("Escolha Valentina ou Tayná para começar!");
 gameLoop();
