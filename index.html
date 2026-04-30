@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+  <title>Valentina e Tayná: Aventura no Reino dos Dinossauros</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div id="rotateWarning" class="rotate-warning">
+    <div>
+      <h2>Vire o celular</h2>
+      <p>Para jogar melhor, coloque o celular de lado.</p>
+      <span>📱➡️</span>
+    </div>
+  </div>
+
+  <main class="game-wrapper">
+    <section id="characterScreen" class="character-screen">
+      <h1>Valentina e Tayná</h1>
+      <h2>Aventura no Reino dos Dinossauros</h2>
+
+      <div class="story-box">
+        <p>
+          No Reino dos Dinossauros, o castelo mágico da festa foi cercado por pequenos dinos travessos.
+          Para chegar até lá, Valentina e Tayná precisam coletar cristais, atravessar a floresta perdida
+          e enfrentar o grande T-Rex no final da aventura.
+        </p>
+      </div>
+
+      <h3>Escolha sua aventureira</h3>
+
+      <div class="character-options">
+        <button id="chooseValentina" class="character-card valentina-card">
+          <div class="character-image-box">
+            <img src="./assets/imagens/valentina.png" alt="Valentina" class="character-select-image" />
+          </div>
+          <strong>Valentina</strong>
+        </button>
+
+        <button id="chooseTayna" class="character-card tayna-card">
+          <div class="character-image-box">
+            <img src="./assets/imagens/tayna.png" alt="Tayná" class="character-select-image" />
+          </div>
+          <strong>Tayná</strong>
+        </button>
+      </div>
+
+      <p class="start-tip">Escolha uma personagem para começar a aventura.</p>
+    </section>
+
+    <section id="gameArea" class="game-area hidden">
+      <h1>Valentina e Tayná</h1>
+      <h2>Aventura no Reino dos Dinossauros</h2>
+
+      <div class="top-buttons">
+        <button id="pauseButton" class="game-action-btn">Pausar</button>
+        <button id="backToCharacter" class="game-action-btn">Trocar personagem</button>
+      </div>
+
+      <section class="hud">
+        <span id="score">Pontos: 0</span>
+        <span id="crystals">Cristais: 0</span>
+        <span id="lives">Vidas: ❤️❤️❤️</span>
+        <span id="message">Escolha Valentina ou Tayná para começar!</span>
+      </section>
+
+      <canvas id="game" width="1200" height="675"></canvas>
+
+      <p class="controls">
+        Controles: setas ou A/D para andar | Espaço, W ou seta para cima para pular | P para pausar | R para reiniciar
+      </p>
+
+      <section class="mobile-controls">
+        <button id="jumpBtn" class="jump-btn">PULAR</button>
+
+        <div class="direction-buttons">
+          <button id="leftBtn" class="control-btn">◀</button>
+          <button id="rightBtn" class="control-btn">▶</button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="./javascript/game.js"></script>
+</body>
+</html>
