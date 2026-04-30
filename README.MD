@@ -1,5 +1,9 @@
 # 🎮 Valentina e Tayná: Aventura no Reino dos Dinossauros
 
+<p align="center">
+  <img src="./assets/imagens/fase-1-desktop.png" alt="Valentina e Tayná: Aventura no Reino dos Dinossauros" width="850">
+</p>
+
 Um jogo simples de aventura em estilo retrô, inspirado nos clássicos jogos de plataforma, como **Super Mario World**, criado em **HTML, CSS e JavaScript**.
 
 Este projeto nasceu de uma ideia muito especial: fazer um presente para minhas filhas, **Valentina** e **Tayná**.
@@ -25,6 +29,50 @@ O jogador pode escolher entre as duas personagens e atravessar fases coletando c
 
 ---
 
+## 📸 Prévia do jogo
+
+Abaixo estão algumas telas do jogo rodando no desktop e no mobile.
+
+### 💻 Versão desktop
+
+<p align="center">
+  <img src="./assets/imagens/fase-1-desktop.png" alt="Fase 1: Vale Encantado no desktop" width="850">
+</p>
+
+<p align="center">
+  <strong>Fase 1: Vale Encantado</strong>
+</p>
+
+<p align="center">
+  <img src="./assets/imagens/fase-2-desktop.png" alt="Fase 2: Floresta Perdida no desktop" width="850">
+</p>
+
+<p align="center">
+  <strong>Fase 2: Floresta Perdida</strong>
+</p>
+
+<p align="center">
+  <img src="./assets/imagens/fase-3-desktop.png" alt="Fase 3: Castelo do T-Rex no desktop" width="850">
+</p>
+
+<p align="center">
+  <strong>Fase 3: Castelo do T-Rex</strong>
+</p>
+
+### 📱 Versão mobile
+
+<p align="center">
+  <img src="./assets/imagens/fase-1-mobile.png" alt="Fase 1 no mobile" width="260">
+  <img src="./assets/imagens/fase-2-mobile.png" alt="Fase 2 no mobile" width="260">
+  <img src="./assets/imagens/fase-3-mobile.png" alt="Fase 3 no mobile" width="260">
+</p>
+
+<p align="center">
+  <strong>Gameplay adaptado para celular com botões na tela.</strong>
+</p>
+
+---
+
 ## 🕹️ Como funciona o jogo
 
 O jogo possui:
@@ -40,6 +88,8 @@ O jogo possui:
 - Música de fundo
 - Chefão final T-Rex
 - Tela final personalizada
+- Botões de controle para jogar no mobile
+- Botão de reiniciar no mobile em caso de Game Over
 
 ---
 
@@ -140,7 +190,13 @@ A estrutura básica do projeto ficou assim:
     │   ├── cristal.png
     │   ├── dino-pequeno.png
     │   ├── trex.png
-    │   └── trex-hit.png
+    │   ├── trex-hit.png
+    │   ├── fase-1-desktop.png
+    │   ├── fase-2-desktop.png
+    │   ├── fase-3-desktop.png
+    │   ├── fase-1-mobile.png
+    │   ├── fase-2-mobile.png
+    │   └── fase-3-mobile.png
     └── sons/
         ├── finalGame.mp3
         ├── looseGame.mp3
@@ -171,6 +227,8 @@ A estrutura básica do projeto ficou assim:
 O jogo também possui botões na tela para movimentação e pulo.
 
 Para melhor experiência, o ideal é jogar com o celular deitado.
+
+No mobile, quando o jogador perde todas as vidas, aparece um botão **REINICIAR** na tela, já que o celular não possui teclado físico.
 
 ---
 
@@ -248,6 +306,7 @@ Ver a Valentina e a Tayná dentro de um jogo, vivendo uma aventura com castelos,
 ✅ Imagens adicionadas  
 ✅ Responsivo para desktop e mobile  
 ✅ Chefão final implementado  
+✅ Botão de reiniciar no mobile  
 
 ---
 
@@ -275,7 +334,7 @@ Projeto criado com apoio do **ChatGPT como copiloto de desenvolvimento**, unindo
 
 GitHub: [Carlos-CGS](https://github.com/Carlos-CGS)  
 LinkedIn: [Carlos Garcia](https://www.linkedin.com/in/carlos-cgs/)  
-Portfólio: [https://carlos-cgs.github.io/CGS/](https://carlos-cgs.github.io/CGS/)
+Portfólio: [CGS](https://carlos-cgs.github.io/CGS/)
 
 ---
 
