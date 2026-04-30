@@ -33,42 +33,55 @@ O jogador pode escolher entre as duas personagens e atravessar fases coletando c
 
 Abaixo estão algumas telas do jogo rodando no desktop e no mobile.
 
-### 💻 Versão desktop
+<table>
+  <tr>
+    <th>Fase</th>
+    <th>💻 Desktop</th>
+    <th>📱 Mobile</th>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <strong>Fase 1</strong><br>
+      Vale Encantado
+    </td>
+    <td align="center">
+      <img src="./assets/imagens/fase-1-desktop.png" alt="Fase 1 Desktop" width="520">
+    </td>
+    <td align="center">
+      <img src="./assets/imagens/fase-1-mobile.png" alt="Fase 1 Mobile" width="260">
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <strong>Fase 2</strong><br>
+      Floresta Perdida
+    </td>
+    <td align="center">
+      <img src="./assets/imagens/fase-2-desktop.png" alt="Fase 2 Desktop" width="520">
+    </td>
+    <td align="center">
+      <img src="./assets/imagens/fase-2-mobile.png" alt="Fase 2 Mobile" width="260">
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <strong>Fase 3</strong><br>
+      Castelo do T-Rex
+    </td>
+    <td align="center">
+      <img src="./assets/imagens/fase-3-desktop.png" alt="Fase 3 Desktop" width="520">
+    </td>
+    <td align="center">
+      <img src="./assets/imagens/fase-3-mobile.png" alt="Fase 3 Mobile" width="260">
+    </td>
+  </tr>
+</table>
 
 <p align="center">
-  <img src="./assets/imagens/fase-1-desktop.png" alt="Fase 1: Vale Encantado no desktop" width="850">
-</p>
-
-<p align="center">
-  <strong>Fase 1: Vale Encantado</strong>
-</p>
-
-<p align="center">
-  <img src="./assets/imagens/fase-2-desktop.png" alt="Fase 2: Floresta Perdida no desktop" width="850">
-</p>
-
-<p align="center">
-  <strong>Fase 2: Floresta Perdida</strong>
-</p>
-
-<p align="center">
-  <img src="./assets/imagens/fase-3-desktop.png" alt="Fase 3: Castelo do T-Rex no desktop" width="850">
-</p>
-
-<p align="center">
-  <strong>Fase 3: Castelo do T-Rex</strong>
-</p>
-
-### 📱 Versão mobile
-
-<p align="center">
-  <img src="./assets/imagens/fase-1-mobile.png" alt="Fase 1 no mobile" width="260">
-  <img src="./assets/imagens/fase-2-mobile.png" alt="Fase 2 no mobile" width="260">
-  <img src="./assets/imagens/fase-3-mobile.png" alt="Fase 3 no mobile" width="260">
-</p>
-
-<p align="center">
-  <strong>Gameplay adaptado para celular com botões na tela.</strong>
+  <strong>Gameplay adaptado para desktop e celular, com botões na tela para a versão mobile.</strong>
 </p>
 
 ---
