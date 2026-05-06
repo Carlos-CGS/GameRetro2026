@@ -391,8 +391,14 @@ function updateRestartButtonVisibility() {
     return;
   }
 
-  if (gameState === "gameOver") {
+  if (gameState === "gameOver" || gameState === "gameWon") {
     restartGameButton.classList.remove("hidden");
+
+    if (gameState === "gameWon") {
+      restartGameButton.textContent = "JOGAR NOVAMENTE";
+    } else {
+      restartGameButton.textContent = "REINICIAR";
+    }
   } else {
     restartGameButton.classList.add("hidden");
   }
@@ -1198,7 +1204,7 @@ function gameLoop() {
     drawTextOverlay(
       "Parabéns, Valentina e Tayná!",
       `Vocês salvaram a festa! Pontuação final: ${score}`,
-      "Com amor, papai Carlos."
+      "Clique em JOGAR NOVAMENTE para começar outra aventura"
     );
   }
 
