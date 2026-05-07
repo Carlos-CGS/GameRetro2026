@@ -32,6 +32,7 @@ O jogador pode escolher entre as duas personagens e atravessar fases coletando c
 ## 📸 Prévia do jogo
 
 Abaixo estão algumas telas do jogo rodando no desktop e no mobile.
+
 Jogue agora: [https://game-retro-2026.vercel.app](https://game-retro-2026.vercel.app)
 
 <table>
@@ -346,10 +347,10 @@ Desenvolvido por **Carlos Garcia**.
 
 Projeto criado com apoio do **ChatGPT como copiloto de desenvolvimento**, unindo criatividade, programação e muito carinho.
 
-GitHub: [Carlos-CGS](https://github.com/Carlos-CGS)  
-LinkedIn: [Carlos Garcia](https://www.linkedin.com/in/carlos-cgs/)  
-Portfólio: [CGS](https://carlos-cgs.github.io/CGS/)
-Jogue agora: [https://game-retro-2026.vercel.app](https://game-retro-2026.vercel.app)
+- GitHub: [Carlos-CGS](https://github.com/Carlos-CGS)  
+- LinkedIn: [Carlos Garcia](https://www.linkedin.com/in/carlos-cgs/)  
+- Portfólio: [CGS](https://carlos-cgs.github.io/CGS/)
+- Jogue agora: [https://game-retro-2026.vercel.app](https://game-retro-2026.vercel.app)
 
 ---
 
